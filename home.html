@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            margin: 100px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+
+        #content-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+        h1 {
+            font-family: 'Poppins',sans-serif;
+            font-size: 50px;
+            margin-bottom: 30px; /* Added margin to create space between h1 and buttons */
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 40px;
+            cursor: pointer;
+            margin: 20px;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        #button1 {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #button2 {
+            background-color: #008CBA;
+            color: white;
+        }
+    </style>
+    <title>Members Registration</title>
+</head>
+<body>
+    <div id="content-container">
+        <h1>Welcome to dev360 Database</h1>
+        
+        <button id="button1" onclick="window.location.href='index.html'">Rigister</button>
+        <button id="button2" onclick="window.location.href='display.php'">Existing</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Created By dev360 Advanced Software Solutins -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <style>
+    .back-button {
+      position: absolute;
+      top: 18px;
+      left: 175px;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    
+    .back-button:hover {
+      background-color: #009e08;
+    }
+    </style>
+    <title> Registration Form </title>
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="title">Applicant Registration Form</div>
+    <div class="content">
+      <form action="connect.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Enter your First name" required name="firstname">
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter your Last Name" required name="lastname">
+          </div>
+          <div class="input-box">
+            <span class="details">File Number</span>
+            <input type="text" placeholder="Enter File Number" name="filenumber">
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter email adrress" required name="email">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter phne number" required name="phonenumber">
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="eg: 23, 8th st Mayfair Johannesburg South Africa, 2092" required name="address">
+          </div>
+        </div>
+        
+        <div class="gender-details">
+          <input type="radio" name="gender" value="m" id="dot-11" >
+          <input type="radio" name="gender" value="f" id="dot-12">
+          <input type="radio" name="gender" value="o" id="dot-13">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-11">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-12">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-13">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="file-type">
+          <input type="radio" name="ftype" value="nc" id="dot-1">
+          <input type="radio" name="ftype" value="as" id="dot-2">
+          <input type="radio" name="ftype" value="rs" id="dot-3">
+          <input type="radio" name="ftype" value="sr" id="dot-4">
+          <input type="radio" name="ftype" value="pr" id="dot-5">
+          <span class="ftype-title">File Type</span>
+          <div class="category1">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="ftype">NEW COMER</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="ftype">ASYLUM SEEKER</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="ftype">REFUGEE STATUS</span>
+          </label> 
+          <label for="dot-4">
+            <span class="dot four"></span>
+            <span class="ftype">SCRAA</span>
+            </label>
+            <label for="dot-5">
+            <span class="dot five"></span>
+            <span class="ftype">PR</span>
+             </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>
